@@ -12,7 +12,7 @@ public class MyService extends Service {
     private int randomNumber;
     private boolean enableRandomGenerator = false;
 
-    private class MyServiceBinder extends Binder{
+    public class MyServiceBinder extends Binder{
         public MyService getService(){
             return MyService.this;
         }
@@ -75,5 +75,9 @@ public class MyService extends Service {
 
     private void stopRandomNumberGenerator(){
         enableRandomGenerator = false;
+    }
+
+    public int getRandomNumber() {
+        return randomNumber;
     }
 }

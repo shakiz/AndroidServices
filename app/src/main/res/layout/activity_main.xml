@@ -9,9 +9,22 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/randomNumberTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:gravity="center"
+        android:text="@string/random_number"
+        android:textSize="16sp"
+        android:textStyle="bold"/>
+
     <Button
         android:id="@+id/startService"
         android:layout_width="200dp"
+        android:layout_marginTop="8dp"
         android:layout_height="wrap_content"
         android:text="Start Service"
         android:textAllCaps="true"/>
@@ -23,5 +36,30 @@
         android:layout_height="wrap_content"
         android:text="Stop Service"
         android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/bindService"
+        android:layout_marginTop="8dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Bind Service"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/unBindService"
+        android:layout_marginTop="8dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="UnBind Service"
+        android:textAllCaps="true"/>
+
+    <Button
+        android:id="@+id/getRandomNumber"
+        android:layout_marginTop="8dp"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Get Random Number"
+        android:textAllCaps="true"/>
+
 
 </LinearLayout>
